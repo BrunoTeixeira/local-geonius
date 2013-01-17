@@ -57,9 +57,8 @@ class localgeonius_api_object
       $lat = $this->data->geoplugin_latitude;
       $lng = $this->data->geoplugin_longitude;
 
-      //$this->user_city  = ($this->data->geoplugin_city) ? $this->data->geoplugin_city : null;
-      $this->user_city  = null;
-
+      $this->user_city  = ($this->data->geoplugin_city) ? $this->data->geoplugin_city : null;
+      
       $this->info = json_decode(self::curl_query("http://where.yahooapis.com/geocode?flags=J&country=" . urlencode(sprintf("%s",$this->user_country)) . "&city=" .  urlencode(sprintf("%s",$this->user_city)) ."&appid=dj0yJmk9VDg5Ujl0RW5oNU1hJmQ9WVdrOU0weHZUWEozTkhVbWNHbzlNVGs0TnpRM016QTJNZy0tJnM9Y29uc3VtZXJzZWNyZXQmeD0wMQ--"));
 
       if($this->info->ResultSet->Found != "0"):
