@@ -246,7 +246,7 @@
     <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
     <script type="text/javascript" src="js/mustache.js"></script>
     <script type="text/javascript" src="js/jquery.livequery.js"></script>
-    <script type="text/javascript" src="js/google_maps.js"></script>
+    <script type="text/javascript" src="js/google.maps.js"></script>
     <script type="text/javascript" src="js/front.js"></script>
 
     <?php include("core/templates.mustache.php"); ?>
