@@ -48,8 +48,6 @@ class localgeonius_api_object
     
     function __construct()
     {
-    	$this->google_key = "AIzaSyBXfquUm8XZ8F3g7s8P6i8R60zO46eJCi0";
-
       $this->ip = $_SERVER['REMOTE_ADDR'];
       $this->data = json_decode(self::curl_query('http://www.geoplugin.net/json.gp?ip=' . $this->ip));
       $this->user_country = $this->data->geoplugin_countryName;
